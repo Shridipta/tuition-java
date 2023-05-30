@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=PROGRAM_4_Time_Add
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ PROGRAM_4_Time_Add\ here.\r\n\r\n\ @author\ (Shridipta\ Satpati)\r\n\ @version\ (8.11.2020)\r\n
+comment1.params=hr1\ min1\ sec1\ hr2\ min2\ sec2
+comment1.target=void\ main(int,\ int,\ int,\ int,\ int,\ int)
+numComments=2

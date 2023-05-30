@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=PROGRAM_26_HCF
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ PROGRAM_26_HCF\ here.\r\n\r\n\ @author\ (Shridipta\ Satpati)\r\n\ @version\ (16.1.21)\r\n
+comment1.params=a\ b
+comment1.target=void\ main(int,\ int)
+numComments=2

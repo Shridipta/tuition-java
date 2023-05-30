@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=PROGRAM_43_PrimeDecomposition_While
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ PROGRAM_43_PrimeDecomposition\ here.\r\n\r\n\ @author\ (Shridipta\ Satpati)\r\n\ @version\ (21.1.21)\r\n
+comment1.params=num
+comment1.target=void\ main(int)
+numComments=2
