@@ -1,6 +1,0 @@
-#BlueJ class context
-comment0.target=PROGRAM_1_Rectangle
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ PROGRAM_1_Rectangle\ here.\r\n\r\n\ @author\ (Shridipta\ Satpati)\r\n\ @version\ (7.11.2020)\r\n
-comment1.params=l\ b
-comment1.target=void\ maint(int,\ int)
-numComments=2

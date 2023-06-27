@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Number_System_Convert
+comment1.params=
+comment1.target=void\ main()
+comment2.params=
+comment2.target=void\ DecToBin()
+comment3.params=
+comment3.target=void\ DecToOct()
+comment4.params=
+comment4.target=void\ DecToHex()
+comment5.params=
+comment5.target=void\ BinToDec()
+comment6.params=
+comment6.target=void\ OctToDec()
+comment7.params=
+comment7.target=void\ HexToDec()
+numComments=8

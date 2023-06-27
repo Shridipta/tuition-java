@@ -1,5 +1,0 @@
-#BlueJ class context
-comment0.target=PROGRAM_84_Time_Add
-comment1.params=hr1\ m1\ s1\ hr2\ m2\ s2
-comment1.target=void\ main(int,\ int,\ int,\ int,\ int,\ int)
-numComments=2
