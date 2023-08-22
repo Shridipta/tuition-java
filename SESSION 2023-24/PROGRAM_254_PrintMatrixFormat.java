@@ -15,7 +15,7 @@ public class PROGRAM_254_PrintMatrixFormat {
                 arr[i][j] = sc.nextInt();
             }
         System.out.println("The data in matrix format");
-        for (int i = 0; i < r; i++) {
+        for (i = 0; i < r; i++) {
             for (j = 0; j < c; j++)
                 System.out.print(arr[i][j]);
             System.out.println();

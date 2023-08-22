@@ -1,23 +1,28 @@
-PROGRAM 247 : TO DISPLAY ALL THE LUCKY NUMBERS UPTO A NATURAL NUMBER N
+PROGRAM 247 : TO CONVERT BINARY TO DECIMAL AND DECIMAL TO ANY AND NON-DECIMAL TO DECIMAL USING THE FUNCTIONS:
+		void binToDec(int num)
+		void decToAny(int num, int base)
+		void anyToDec(String num, int base)
+
+PROGRAM 248 : TO DISPLAY ALL THE LUCKY NUMBERS UPTO A NATURAL NUMBER N
 		EG. 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
 		    1, 3, 5, 7, 9
 		    1, 3, 7
 
-PROGRAM 248 : TO ACCEPT A NUMBER AND CHECK IF IT IS FASCINATING NUMBER OR NOT
+PROGRAM 249 : TO ACCEPT A NUMBER AND CHECK IF IT IS FASCINATING NUMBER OR NOT
 		
-PROGRAM 249 : TO PRINT ALL THE SET OF TRIAD NUMBERS (FANCY NUMBERS)
+PROGRAM 250 : TO PRINT ALL THE SET OF TRIAD NUMBERS (FANCY NUMBERS)
 
-PROGRAM 250 : TO ACCEPT A NUMBER AND CHECK IF ITS CYCLIC NUMBER OR NOT (WITH ARRAY AND WITHOUT ARRAY)
+PROGRAM 251 : TO ACCEPT A NUMBER AND CHECK IF ITS CYCLIC NUMBER OR NOT (WITH ARRAY AND WITHOUT ARRAY)
 		EG. 142857*1 = 142857
 		    142857*2 = 285714
 
-PROGRAM 251 : TO CHECK WHETHER A NUMBER IS SMITH NUMBER OR NOT
-	      A NUMBER IS SAID TO BE SMITH NUMBER IF THE SUM OF THE DIGITS OF THE NUMBER IS EQUAL TO THE SUM OF THE PRIME FACTORS OF THAT NUMBER
+PROGRAM 252 : TO CHECK WHETHER A NUMBER IS SMITH NUMBER OR NOT
+	      A NUMBER IS SAID TO BE SMITH NUMBER IF THE SUM OF THE DIGITS OF THE NUMBER IS EQUAL TO THE SUM OF 	      THE PRIME FACTORS OF THAT NUMBER
 		EG. 666 
 		    6+6+6 = 18
 		    PRIME FACTORS = 2+3+3+7 = 18
 
-PROGRAM 252 : TO FIND MOBIUS FUNCTION OF NATURAL NUMBER n WHICH IS DEFINED AS FOLLOWS:
+PROGRAM 253 : TO FIND MOBIUS FUNCTION OF NATURAL NUMBER n WHICH IS DEFINED AS FOLLOWS:
 	      M(n) = 0 IF n = 1
 	      M(n) = 1 IF PRIME FACTORS ARE REPEATED
 	      M(n) = (-1)^p IF THERE ARE p DISTINCT PRIME FACTORS OF n
@@ -25,9 +30,7 @@ PROGRAM 252 : TO FIND MOBIUS FUNCTION OF NATURAL NUMBER n WHICH IS DEFINED AS FO
 		    M(78) = -1
 		    M(12) = 1
 
-PROGRAM 253 : (KAPREKAR CONSTANT) TO ACCEPT A 4 DIGIT NUMBER AND DISPLAY ALL THE SEQUENCE OF NUMBERS TILL THE GENERATION OF KAPREKAR CONSTANT 6174
-	      EXCEPT ALL DIGITS IN THE NUMBER ARE EQUAL
-		
+PROGRAM 254 : (KAPREKAR CONSTANT) TO ACCEPT A 4 DIGIT NUMBER AND DISPLAY ALL THE SEQUENCE OF NUMBERS TILL THE GENERATION OF KAPREKAR CONSTANT 6174 EXCEPT ALL DIGITS IN THE NUMBER ARE EQUAL
 	      STEPS: MAKE THE INTERMEDIATE DIFFERENCE A DESCENDING NUMBER AND SUBTRACT THE REVERSE OF THE INTERMEDIATE DESCENDING DIFFERENCE FROM IT
 	      INPUT: 1234
 		    DISPLAY
@@ -36,37 +39,355 @@ PROGRAM 253 : (KAPREKAR CONSTANT) TO ACCEPT A 4 DIGIT NUMBER AND DISPLAY ALL THE
 		     8532	8532-2358 = 6174
 		     6174 	
 		     
-PROGRAM 254 : TO ACCEPT DATA INTO R*C ORDER MATRIX AND DISPLAY THE DATA IN MATRIX FORMAT
-PROGRAM 255 : TO CREATE A 2D ARRAY OF SIZE 3,4 WITH FIRST TWELVE NATURAL NUMBERS COLUMNWISE AND DISPLAY IT IN MATRIX FORMAT
+PROGRAM 255 : TO ACCEPT DATA INTO R*C ORDER MATRIX AND DISPLAY THE DATA IN MATRIX FORMAT
+PROGRAM 256 : TO CREATE A 2D ARRAY OF SIZE 3,4 WITH FIRST TWELVE NATURAL NUMBERS COLUMNWISE AND DISPLAY IT IN MATRIX FORMAT
 	      EG. 1  4  7  10
 		  2  5  8  11
 		  3  6  9  12 
-PROGRAM 256 : TO ACCEPT DATA INTO A M*N MATRIX AND DISPLAY THE SUM OF EACH ROW AND SUM OF EACH COLUMN
-PROGRAM 257 : TO FIND THE TRANSPOSE OF A M*N ORDER MATRIX
+
+PROGRAM 257 : TO ACCEPT DATA INTO A M*N MATRIX AND DISPLAY THE SUM OF EACH ROW AND SUM OF EACH COLUMN
+PROGRAM 258 : TO FIND THE TRANSPOSE OF A M*N ORDER MATRIX
 	      EG. INPUT => 2 5 7
 			   4 3 1
 		  OUTPUT => 2 4
 			    5 3
 			    7 1
-PROGRAM 258 : TO FIND THE SUM OF THE LEFT DIAGONAL AND RIGHT DIAGONAL ELEMENTS OF A SQUARE MATRIX SEPARATELY
-PROGRAM 259 : TO CHECK WHETHER A MATRIX IS SYMMETRICAL OR NOT
+
+PROGRAM 259 : TO FIND THE SUM OF THE LEFT DIAGONAL AND RIGHT DIAGONAL ELEMENTS OF A SQUARE MATRIX SEPARATELY
+PROGRAM 260 : TO CHECK WHETHER A MATRIX IS SYMMETRICAL OR NOT
 	      A SYMMETRIC MATRIX IS A SQUARE MATRIX FOR WHICH arr[i][j] = arr[j][i]
-PROGRAM 260 : 
-PROGRAM 261 : 
-PROGRAM 262 : 
-PROGRAM 263 : 
-PROGRAM 264 : 
-PROGRAM 265 : 
-PROGRAM 266 : 
-PROGRAM 267 : 
-PROGRAM 268 : 
-PROGRAM 269 : 
-PROGRAM 270 : 
-PROGRAM 271 : 
-PROGRAM 272 : 
-PROGRAM 273 : 
-PROGRAM 274 : 
-PROGRAM 275 : 
+PROGRAM 261 : TO IMPLEMENT THE FOLLOWING ARRAY OPERATIONS
+		static void insert(int pos, int item, int[] arr)
+    		static void delete(int pos, int[] arr) 
+    		static int[] union(int[] a, int[] b)
+	    	static void frequency(int arr[])
+	    	int[] merge(int a[], int b[]) 
+
+PROGRAM 262 : TO DISPLAY THE SADDLE POINT (IF ANY) IN A M*N ORDER MATRIX
+	      EG. 1 2 3
+		  4 5 6 
+		  7 8 9 
+		  7 IS LOWEST IN ROW AND HIGHEST IN COLUMN SO 7 IS THE SADDLE POINT
+		  A MATRIX MAY NOT HAVE A SADDLE POINT
+
+PROGRAM 263 : CLASS- Equal_Matrix
+	      DATA MEMBERS- int arr[][], row, col
+	      MEMBER METHODS- void display(), void checkEQual(Equal_Matrix M), void acceptData(), void main()
+
+PROGRAM 264 :
+PROGRAM 265 : CONVERT THE FOLLOWING SENTENCE INTO THE FORMATS SPECIFIED BELOW-
+			INPUT: THE SUM RISES IN THE EAST
+			OUTPUT: The Words Are-
+					THE
+					SUN
+					RISES
+					IN
+					THE
+					EAST
+					The New Sentence:
+					ETHO SUN ESRISO
+					
+					(and another program)
+
+					The New Sentence:
+					EHT NSU EIRSS IN EHT AEST
+
+
+
+PROGRAM 266 : A class Matrix contains a two dimensional integer array of order [ m x n ]. The maximum value
+			possible for both m and n is 25. Design a class Matrix to find the difference of the two matrices. The
+			details of the members of the class are given below:
+			Class name : Matrix
+			Data members
+			arr[][] : stores the matrix element
+			m : integer to store the number of rows
+			n : integer to store the number of columns
+			Member functions:
+			Matrix(int mm, int nn) : to initialize the size of the matrix m=mm and n=nn
+			void fillarray() : to enter the elements of the matrix
+			Matrix SubMat(Matrix A) : subtract the current object from the matrix
+			of parameterized object and return the resulting object.
+			void display() : display the matrix elements.
+			Specify the class Matrix giving details of the constructor(int,int), void fillarray(),Matrix
+			SubMat(Matrix) and void display(). Define the main() function to create an object and call the
+			functions accordingly to enable the task.
+
+PROGRAM 267 : An emirp number is a number which is prime backwards and forwards. Example: 13 and 31 are both
+			prime numbers. Thus 13 is an emirp number.
+			Design a class Emirp to check if a given number is Emirp number or nt. Some of the members of the
+			class are given below:
+			Class Name : Emirp
+			Data Members
+			n : stores the number
+			rev : stores the reverse of the number
+			f : stores the divisor
+			Member functions
+			Emirp(int nn) : to assign n=nn, rev=0, and f=2
+			int isprime(int x) : check if the number is prime using the
+			recursive technique and return 1 if prime otherwise return 0.
+			void isEmirp() : reverse the given number and check if both the original number ad the reverse number are
+			prime, by invoking the function isprime(int) and display the result with an appropriate message.
+			Specify the class Emirp giving details of the constructor(int), int isprime(int) and void isEmirp().
+			Define the main function to create an object and call the methods to check for Emirp number.
+
+PROGRAM 268 : Design a class Exchange to accept a sentence and interchange the first alphabet with the last
+			alphabet for each word in the sentence, with single letter word remaining unchanged. The words in
+			the input are separated by a single blank space and terminated by a full stop.
+			Example: Input: It is a warm day.
+			Ouput: tI si a marw yad
+			Some of the data members and member functions are given below:
+			Class Name : Exchange
+			Data members
+			sent : stores the sentence
+			rev : to store the new sentence
+			size : stores the length of the sentence
+			Member functions
+			Exchange() : default constructor
+			void readsentence() : to accept the sentence
+			void exfirstlast() : extract each word and interchange the first and last
+			alphabet of the word and form a new sentence.
+			void display() : display the original sentence along with the new changed sentence.
+			Specify the class Exchange giving details of the constructor(), void readsentence(), void exfirstlast()
+			and void display(). Define the main() function to create an object and call the functions accordingly
+			to enable the task.
+
+PROGRAM 269 : Design a class VowelWord to accept a sentence and calculate the frequency of words that begin with a
+			vowel. The words in the input string are separated by a single blank space and terminated by a full stop.
+			The description of the class is given below:
+			Class Name : VowelWord
+			Data members
+			str : to store a sentence
+			freq : to store the frequency of words beginning with a
+			vowel.
+			Member functions
+			VowelWord() : constructor to initialize data members to legal initial
+			values.
+			voidreadstr() : to accept a sentence.
+			voidfreq_vowel( ) : counts the frequency of the words beginning with a
+			vowel.
+			void display() : to display the original string and the frequency of the words that begin with a vowel.
+			Specify the class VowelWord giving details of the constructor( ), void readstr(), void freq_vowel() and
+			void display(). Also defing the main function to create an object and call the methods accordingly to
+			enable the task.
+
+PROGRAM 270 : A happy number is a number in which the eventual sum of the square of the digits of the number is equal to 1.
+			Example :
+			28 = (2)2 + ( 8 )2 = 4 + 64 = 68
+			68 = (6)2 + ( 8)2 = 36 + 64 = 100
+			100 = ( 1 )2 + ( 0 )2 + ( 0 )2 = 1 + 0 + 0 = 1
+			Hence 28 is a happy number.
+			Example :
+			12 = (1)2 + (2)2 = 1 + 4 = 5
+			Hence 12 is not a happy number.
+			Design a class Happy to check if a given number is a happy number. Some of the members of the class
+			are given below:
+			Class Name : Happy
+			Data Members
+			n : stores the number
+			Member functions:
+			Happy( ) : constructor to assign 0 to n
+			voidgetnum(intnn) : to assign the parameter value to the number n = nn
+			intsum_sq_digits(int x) : returns the sum of the square of the digits of the
+			number x, using the recursive technique.
+			voidishappy() : checks if the given number is a happy by calling the
+			functionsum_sq_digits(int) and displays an appropriate
+			message.
+			Specify the class Happy giving details of the constructor( ), void getnum( int), intsum_sq_digits(int) and
+			void ishappy(). Also define a main function to create an object and call the methods to check for a happy
+			number.
+		
+PROGRAM 271 : A class Combine contains an array of integers which combines two arrays into a single array including
+			the duplicate elements, if any, and sorts the combined array. Some of the members of the class are
+			given below:
+			Class Name : Combine
+			Data members
+			com[ ] : integer array
+			size : size of the array
+			Member functions/methods
+			Combine(intnn) : parameterized constructor to assign size = nn
+			voidinputarray( ) : to accept the array elements
+			void sort() : sorts the elements of combined array in ascending
+			order using the selection sort technique.
+			void mix(Combine A, Combine B) : combines the parameterized object arrays and stores
+			the result in the current object array along with the
+			duplicate elements , if any.
+			void display( ) : displays the array elements.
+			Specify the class Combine giving details of the constructor(int ), void inputarray( ), void sort(), void
+			mix(Combine, Combine) and void display( ). Also define the main function to create an object and call
+			the methods accordingly to enable the task.
+
+PROGRAM 272 : Input a paragraph containing ‘n’ number of sentences where (1 = < n < 4). The words are to be
+			separated with a single blank space and are in UPPERCASE. A sentence may be terminated either
+			with a full stop ‘.’ or a question mark ‘?’ only. Any other character may be ignored. Perform the
+			following operations:
+			i. Accept the number of sentences. If the number of sentences exceeds the limit, an
+			appropriate error message must be displayed.
+			ii. Find the number of words in the whole paragraph
+			iii. Display the words in ascending order of their frequency. Words with same frequency may
+			appear in any order.
+
+			Example 1
+			INPUT: Enter number of sentences.
+			1
+			Enter sentences.
+			TO BE OR NOT TO BE.
+			OUTPUT: Total number of words: 6
+			WORD FREQUENCY
+			OR 1
+			NOT 1
+			TO 2
+			BE 2
+
+			Example 2
+			INPUT: Enter number of sentences
+			3
+			Enter sentences.
+			THIS IS A STRING PROGRAM.IS THIS EASY?YES,IT IS.
+			OUTPUT: Total number of words: 11
+			WORD FREQUENCY
+			A 1
+			STRING 1
+			PROGRAM 1
+			EASY 1
+			YES 1
+			IT 1
+			THIS 2
+			IS 3
+
+			Example 3
+			INPUT: Enter number of sentences
+			5
+			OUTPUT: Invalid entry
+
+
+PROGRAM 273 : An Evil number is a positive whole number which has even number of 1’s in its binary equivalent.
+			Example: Binary equivalent of 9 is 1001, which contains even number of 1’s.
+			Thus, 9 is an Evil Number.
+			A few Evil numbers are 3, 5, 6, 9....
+			Design a program to accept a positive whole number ‘N’ where N>2 and N<100. Find the binary
+			equivalent of the number and count the number of 1s in it and display whether it is an Evil number or
+			not with an appropriate message.
+			Test your program with the following data and some random data:
+			
+			Example 1:-
+
+			INPUT:
+			N = 15
+
+			BINARY EQUIVALENT: 1111
+			NUMBER OF 1’s: 4
+			OUTPUT:
+			EVIL NUMBER
+
+			Example 2:-
+
+			INPUT:
+			N = 26
+
+			BINARY EQUIVALENT: 11010
+			NUMBER OF 1’s: 3
+			OUTPUT:
+			NOT AN EVIL NUMBER
+
+			Example 3:-
+
+			INPUT:
+			N = 145
+
+			OUTPUT:
+			NUMBER OUT OF RANGE
+
+
+PROGRAM 274 : The potential of a word is found by adding the ASCII value of the alphabets.
+			(ASCII values of A to Z are 65 to 90).
+			Example:
+
+			BALL
+			Potential = 66 + 65 + 76 + 76 = 283
+
+			Write a program to accept a sentence which may be terminated by either “ . ” , “ ? ” or “ ! ” only.
+			The words of sentence are separated by single blank space and are in UPPER CASE. Decode the
+			words according to their potential and arrange them in ascending order of their potential strength.
+			Test your program with the following data and some random data:
+			
+			Example 1:-
+
+			INPUT:
+			HOW DO YOU DO?
+
+			OUTPUT:
+			HOW = 238
+			DO = 147
+			YOU = 253
+			DO = 147
+			DO DO HOW YOU
+
+			Example 2:-
+
+			INPUT:
+			LOOK BEFORE YOU LEAP.
+
+			OUTPUT:
+			LOOK = 309
+			BEFORE = 435
+			YOU = 253
+			LEAP = 290
+			YOU LEAP LOOK BEFORE
+
+			Example 3:-
+
+			INPUT:
+			HOW ARE YOU#
+
+			OUTPUT:
+			INVALID INPUT
+
+PROGRAM 275 : Write a program to declare a square matrix M [ ] [ ] of order ‘N’ where ‘N’ must be greater than 3
+			and less than 10. Allow the user to accept three different characters from the keyboard and fill the
+			array according to the instruction given below:
+			(i)Fill the four corners of the square matrix by character 1.
+			(ii) Fill the boundary elements of the matrix (except the four corners) by character 2.
+			(iii)Fill the non-boundary elements of the matrix by character 3.
+
+			Test your program with the following data and some random data:
+
+			Example 1:-
+
+			INPUT:
+			N=4
+			FIRST CHARACTER: @
+			SECOND CHARACTER: ?
+			THIRD CHARACTER: #
+
+			OUTPUT:
+			@ ? ? @
+			? # # ?
+			? # # ?
+			@ ? ? @
+
+			Example 2:-
+
+			INPUT:
+			N=5
+			FIRST CHARACTER: A
+			SECOND CHARACTER: C
+			THIRD CHARACTER: X
+
+			OUTPUT:
+			A C C C A
+			C X X X C
+			C X X X C 
+			C X X X C
+			A C C C A
+
+			Example 3:-
+
+			INPUT:
+			N = 12
+
+			OUTPUT:
+			SIZE OUT OF RANGE
+
 PROGRAM 276 : 
 PROGRAM 277 : 
 PROGRAM 278 : 
