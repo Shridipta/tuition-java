@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class PROGRAM_254_PrintMatrixFormat {
+public class PROGRAM_257_SumRowColumn {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number of rows");
@@ -14,11 +14,18 @@ public class PROGRAM_254_PrintMatrixFormat {
                 System.out.println("Enter the data");
                 arr[i][j] = sc.nextInt();
             }
-        System.out.println("The data in matrix format");
-        for (i = 0; i < r; i++) {
-            for (j = 0; j < c; j++)
-                System.out.print(arr[i][j]);
-            System.out.println();
+        int m = arr.length, n = arr[0].length;
+        int sum = 0;
+        for (i = 0; i < m; i++) {
+            for (j = 0; j < n; j++)
+                sum += arr[i][j];
+            System.out.println("Sum of row " + (i + 1) + " = " + sum);
+        }
+        for (i = 0; i < n; i++) {
+            sum = 0;
+            for (j = 0; j < m; j++)
+                sum += arr[i][j];
+            System.out.println("Sum of column " + (i + 1) + " = " + sum);
         }
     }
 }

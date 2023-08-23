@@ -1,4 +1,4 @@
-public class PROGRAM_255_Matrix12Numbers {
+public class PROGRAM_256_Matrix12Numbers {
     public static void main(String[] args) {
         int arr[][] = new int[3][4];
         int i, j, k = 0;

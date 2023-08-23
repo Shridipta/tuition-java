@@ -1,4 +1,4 @@
-class PROGRAM_249_Triad {
+class PROGRAM_250_TriadRange {
     public static void main(String[] args) {
         for (int i = 100; i <= 333; i++) {
             int a = i, b = i * 2, c = i * 3;

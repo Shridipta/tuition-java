@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class PROGRAM_249_CyclicNumber_M3_array {
+public class PROGRAM_251_CyclicNumber_M3_array {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a number");

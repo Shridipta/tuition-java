@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class PROGRAM_252_MobiusFunction {
+public class PROGRAM_253_MobiusFunction {
 
     static int M(int n) {
         int p = 0, prev = 0, i;

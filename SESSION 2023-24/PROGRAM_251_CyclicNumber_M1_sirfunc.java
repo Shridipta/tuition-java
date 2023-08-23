@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class PROGRAM_250_CyclicNumber_M1_sirfunc {
+public class PROGRAM_251_CyclicNumber_M1_sirfunc {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number");

@@ -32,12 +32,14 @@ public class PROGRAM_274_Potential_Sent {
     }
 
     void extract() {
+        int k = 0, c = 0;
+        str += " ";
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
-            int k = 0, c = 0;
             if (ch == ' ') {
                 words[c++] = str.substring(k, i);
                 k = i + 1;
+                System.out.println(words[c]);
             }
         }
     }
@@ -50,8 +52,6 @@ public class PROGRAM_274_Potential_Sent {
                     words[j] = words[j + 1];
                     words[j + 1] = temp;
                 }
-                ;
-
             }
         }
     }
@@ -63,15 +63,15 @@ public class PROGRAM_274_Potential_Sent {
             arrange();
             for (int i = 0; i < words.length; i++)
                 System.out.print(words[i] + " ");
-        }
-        else
-        System.out.println("INVALID INPUT");
+        } else
+            System.out.println("INVALID INPUT");
 
     }
 
     public static void main(String[] args) {
         PROGRAM_274_Potential_Sent obj = new PROGRAM_274_Potential_Sent();
         obj.accept();
+        obj.extract();
         obj.display();
     }
 }

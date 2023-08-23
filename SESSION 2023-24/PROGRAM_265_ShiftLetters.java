@@ -8,6 +8,7 @@ public class PROGRAM_265_ShiftLetters {
         int pos = 0;
         int n = str.length();
         String word[] = new String[n];
+        int k = 0;
         if (str.charAt(n - 1) != '.') // validity
         {
             System.out.println("Invalid. Full Stop not there.");
@@ -39,7 +40,7 @@ public class PROGRAM_265_ShiftLetters {
         }
         for (int i = 0; i < n; i++) {
             String w = word[i];
-            int k = w.indexOf('E');
+            k = w.indexOf('E');
             String nw = w.substring(k) + w.substring(0, k) + 'O';
             System.out.println(nw + " ");
         }

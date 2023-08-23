@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class PROGRAM_253_KaprekarConstant {
+public class PROGRAM_254_KaprekarConstant {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number");

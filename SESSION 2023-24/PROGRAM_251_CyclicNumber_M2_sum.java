@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class PROGRAM_250_CyclicNumber_M2_sum {
+public class PROGRAM_251_CyclicNumber_M2_sum {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a number");

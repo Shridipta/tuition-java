@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class PROGRAM_258_SumDiagonals {
+public class PROGRAM_258_TransposeMatrix {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number of rows");
@@ -14,14 +14,12 @@ public class PROGRAM_258_SumDiagonals {
                 System.out.println("Enter the data");
                 arr[i][j] = sc.nextInt();
             }
-
-        int lsum = 0, rsum = 0;
-        for (i = 0; i < r; i++)
-            for (j = 0; j < c; j++) {
-                lsum = lsum + arr[i][i];
-                rsum = rsum + arr[i][n - i - 1];
-            }
-        System.out.println("Left Diagonal Sum = " + lsum);
-        System.out.println("Right Diagonal Sum = " + rsum);
+        int tran[][] = new int[c][r];
+        System.out.println("Transposed Matrix");
+        for (i = 0; i < c; i++) {
+            for (j = 0; j < r; j++)
+                System.out.println(tran[i][j] + " ");
+            System.out.println();
+        }
     }
 }

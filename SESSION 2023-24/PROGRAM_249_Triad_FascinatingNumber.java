@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class PROGRAM_248_FascinatingNumber {
+public class PROGRAM_249_Triad_FascinatingNumber {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the value of n");
