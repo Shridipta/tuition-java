@@ -54,8 +54,11 @@ PROGRAM 258 : TO FIND THE TRANSPOSE OF A M*N ORDER MATRIX
 			    7 1
 
 PROGRAM 259 : TO FIND THE SUM OF THE LEFT DIAGONAL AND RIGHT DIAGONAL ELEMENTS OF A SQUARE MATRIX SEPARATELY
-PROGRAM 260 : TO CHECK WHETHER A MATRIX IS SYMMETRICAL OR NOT
-	      A SYMMETRIC MATRIX IS A SQUARE MATRIX FOR WHICH arr[i][j] = arr[j][i]
+
+PROGRAM 260 : TO CHECK WHETHER A MATRIX IS SYMMETRICAL OR NOT 
+	      A SYMMETRIC MATRIX IS A SQUARE MATRIX FOR WHICH arr[i][j] = arr[j][i] 
+	      (LINE OF SYMMETRY -> ALONG PRINCIPLE DIAGONAL)
+
 PROGRAM 261 : TO IMPLEMENT THE FOLLOWING ARRAY OPERATIONS
 		static void insert(int pos, int item, int[] arr)
     		static void delete(int pos, int[] arr) 
@@ -63,7 +66,8 @@ PROGRAM 261 : TO IMPLEMENT THE FOLLOWING ARRAY OPERATIONS
 	    	static void frequency(int arr[])
 	    	int[] merge(int a[], int b[]) 
 
-PROGRAM 262 : TO DISPLAY THE SADDLE POINT (IF ANY) IN A M*N ORDER MATRIX
+PROGRAM 262 : TO DISPLAY THE SADDLE POINT (IF ANY) IN A M*N ORDER MATRIX (IF ANY)
+	      SADDLE POINT IS AN ELEMENT WHICH IS LOWEST IN THE ROW AND HIGHEST IN THE COLUMN
 	      EG. 1 2 3
 		  4 5 6 
 		  7 8 9 
@@ -388,6 +392,8 @@ PROGRAM 275 : Write a program to declare a square matrix M [ ] [ ] of order ‘N
 			OUTPUT:
 			SIZE OUT OF RANGE
 
+
+
 PROGRAM 276 :  A pair of numbers is called amicable if the sum of proper divisor of one number is equal to the other. e.g – 220,284
 
 			Class name :  AmicableNumber
@@ -396,6 +402,8 @@ PROGRAM 276 :  A pair of numbers is called amicable if the sum of proper divisor
 			Function member : - AmicableNumber(int,int) – constructor to initialize the data member with appropriate values
 			void  printNum() – to print all the amicable numbers in the range a,b (b<a). 
 			int sumOfDivisor(int)- to return the sum of divisor of a number. Define the above class with the functions including main() to create objects and call the functions accordingly. 
+
+
 
 PROGRAM 277 : Class Sorter contains an array of n integers. Some of the member functions/methods of Sorter are given below:-
 			Class name: Sorter
@@ -408,6 +416,7 @@ PROGRAM 277 : Class Sorter contains an array of n integers. Some of the member f
 			void insertionsort() - sorts the array in descending order using the insertion  sort algorithm  
 			Define the above class with the functions including main() to create objects and call the functions accordingly.			                                                                      
 
+
 PROGRAM 278 : You are given a string of upper case letters, parts of which may be enclosed in ().The string is invalid if the brackets are nested. For e.g – AS(BUT(SYS)VGT) is an invalid string.
 
 			Class name: Text  
@@ -419,10 +428,14 @@ PROGRAM 278 : You are given a string of upper case letters, parts of which may b
 			void show() – output the given string omitting the portion enclosed in brackets if the string is valid otherwise display  the message “String is not valid”
 			Define the above class with the functions including main() to create objects and call the functions accordingly.    
 
-PROGRAM 279 : Class: Search			Data member: num[],size ( integer)
-            Method: Search(int ) – constructor 
+
+
+PROGRAM 279 : Class: Search			Data member: num[],size (integer)
+            Method: Search(int) – constructor 
  			void acceptdata() – to accept numeric data in decending order. 
 			void bisearch(int[],int,int,int) – to search an item using recursive binary search method.  
+
+
 
 PROGRAM 280 : Class: Time 
 			Data member: hh,mm,ss (integer) to store time in 24 hrs format
@@ -431,6 +444,8 @@ PROGRAM 280 : Class: Time
 			Time difference(Time t1) – to find the difference in time and return the difference.      
  			void display()- to display the resultant time in 12 hrs format.      
  
+
+
 PROGRAM 281 : A Circular Prime is a prime number that remains prime under cyclic shifts of its digits.
 			When the leftmost digit is removed and replaced at the end of the remaining string of digits, the generated number is still prime. The process is repeated until the original number is reached again. A number is said to be prime if it has only two factors 1 and itself.
 			Example; 131 311 113
@@ -461,6 +476,7 @@ PROGRAM 281 : A Circular Prime is a prime number that remains prime under cyclic
 			29
 			92
 			29 IS NOT A CIRCULAR PRIME
+
 
 
 PROGRAM 282 : Write a program to declare a square matrix A[][] of order (M x M) where 'M' must be greater 
@@ -529,6 +545,7 @@ PROGRAM 282 : Write a program to declare a square matrix A[][] of order (M x M) 
 			OUTPUT: THE MATRIX IS OUT OF RANGE.
 
 
+
 PROGRAM 283 : Write a program to accept a sentence which may be terminated by either '.', '?' or '!' only. The words may be 
 			separated by more than one blank space and are in UPPER CASE. Perform the following tasks:
 			(a) Find the number of words beginning an ending with a vowel.
@@ -559,19 +576,24 @@ PROGRAM 283 : Write a program to accept a sentence which may be terminated by ei
 			OUTPUT: INVALID INPUT
 
 
-PROGRAM 284 : 
-PROGRAM 285 : 
-PROGRAM 286 : 
-PROGRAM 287 : 
-PROGRAM 288 : 
-PROGRAM 289 : 
-PROGRAM 290 : 
-PROGRAM 291 : 
-PROGRAM 292 : 
-PROGRAM 293 : 
-PROGRAM 294 : 
-PROGRAM 295 : 
-PROGRAM 296 : 
-PROGRAM 297 : 
+
+
+PROGRAM 284 : CAESAR CIPHER- ROTATION OF EACH CHARACTER BY 13 PLACES
+PROGRAM 285 : PACKING CARTONS INTO 48, 24, 12 AND 6 CAPACITY BOXES.
+
+PROGRAM 286 : TO INPUT 2 NUMBERS M,N PREFERABLY M>N AND PRINT THE SMALLEST NUMBER > M WHOSE SUM OF DIGITS >N.
+PROGRAM 287 : TO PRINT TIME IN WORDS, WITH “MINUTES TO”, “MINUTES PAST” FOR (1 TO 15 AND 45 TO 59) MINUTES 		      RESPECTIVELY.
+PROGRAM 288 : TO PRINT ALL THE TWIN PRIME NUMBERS WITHIN A RANGE
+PROGRAM 289 : TO CHECK A NUMBER IS MAGIC COMPOSITE NUMBER OR NOT
+PROGRAM 290 : TO ACCEPT AN EVEN NUMBER AND DISPLAY ALL THE PAIR OF PRIMES WHOSE SUMMATION IS EQUAL TO THE NUMBER. (NON-REPETITION OF PAIR OF PRIMES)
+PROGRAM 291 : TO DISPLAY PRIME DECOMPOSITION OF ALL COMPOSITE NUMBERS FROM M TO N.
+PROGRAM 292 : TO CHECK A NUMBER IS BOUNCY AND HARSHAD 	
+PROGRAM 293 : TO ACCEPT A FIBONACCI NUMBER AND FIND THE SUM OF FIBONACCI AND NON-FIBONACCI DIGITS IN IT.
+PROGRAM 294 : WAP TO ACCEPT A NUMBER AND DISPLAY ALL THE EMBEDDED PRIMES IN IT.	EG:- 5273; 	5,2,7,3;	5273; 		527;	37
+
+PROGRAM 295 : TO CREATE A 2D ARRAY WITH FIRST R*C PRIME NUMBERS COLUMN WISE.
+PROGRAM 296 : SPIRAL MATRIX- TO FILL A MATRIX WITH 1ST M*N NUMBERS IN CLOCKWISE FASHION
+PROGRAM 297 : TO TRANSPOSE A GIVEN ARRAY OF SIZE M*N WITHOUT ANOTHER ARRAY (SELF-TRANSPOSE)
+
 PROGRAM 298 : 
 PROGRAM 299 : 

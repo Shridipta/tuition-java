@@ -1,3 +1,5 @@
+
+//working full
 import java.util.Scanner;
 
 public class PROGRAM_281_CircularPrime {
@@ -28,10 +30,10 @@ public class PROGRAM_281_CircularPrime {
     void display() {
         int copy = n, flag = 0;
         do {
+            System.out.println(copy);
             int d = copy / (int) Math.pow(10, countDigits(copy) - 1);
             copy = copy % (int) Math.pow(10, countDigits(copy) - 1);
             copy = copy * 10 + d;
-            System.out.println(copy);
             if (isprime(copy) == false)
                 flag = 1;
         } while (copy != n);
