@@ -1,5 +1,5 @@
+//working
 
-//working full
 import java.util.Scanner;
 
 public class PROGRAM_281_CircularPrime {

@@ -60,11 +60,11 @@ PROGRAM 260 : TO CHECK WHETHER A MATRIX IS SYMMETRICAL OR NOT
 	      (LINE OF SYMMETRY -> ALONG PRINCIPLE DIAGONAL)
 
 PROGRAM 261 : TO IMPLEMENT THE FOLLOWING ARRAY OPERATIONS
-		static void insert(int pos, int item, int[] arr)
+			static void insert(int pos, int item, int[] arr)
     		static void delete(int pos, int[] arr) 
-    		static int[] union(int[] a, int[] b)
+    		static void union(int[] a, int[] b)
 	    	static void frequency(int arr[])
-	    	int[] merge(int a[], int b[]) 
+	    	static void merge(int a[], int b[]) 
 
 PROGRAM 262 : TO DISPLAY THE SADDLE POINT (IF ANY) IN A M*N ORDER MATRIX (IF ANY)
 	      SADDLE POINT IS AN ELEMENT WHICH IS LOWEST IN THE ROW AND HIGHEST IN THE COLUMN
@@ -78,9 +78,13 @@ PROGRAM 263 : CLASS- Equal_Matrix
 	      DATA MEMBERS- int arr[][], row, col
 	      MEMBER METHODS- void display(), void checkEQual(Equal_Matrix M), void acceptData(), void main()
 
-PROGRAM 264 :
+PROGRAM 264 : TO IMPLEMENT THE FOLLOWING ARRAY OPERATIONS
+			static void findsum()
+    		static void boundarysum()
+    		static void swaprows()
+
 PROGRAM 265 : CONVERT THE FOLLOWING SENTENCE INTO THE FORMATS SPECIFIED BELOW-
-			INPUT: THE SUM RISES IN THE EAST
+			INPUT: THE SUN RISES IN THE EAST.
 			OUTPUT: The Words Are-
 					THE
 					SUN
@@ -134,6 +138,8 @@ PROGRAM 267 : An emirp number is a number which is prime backwards and forwards.
 			Specify the class Emirp giving details of the constructor(int), int isprime(int) and void isEmirp().
 			Define the main function to create an object and call the methods to check for Emirp number.
 
+
+
 PROGRAM 268 : Design a class Exchange to accept a sentence and interchange the first alphabet with the last
 			alphabet for each word in the sentence, with single letter word remaining unchanged. The words in
 			the input are separated by a single blank space and terminated by a full stop.
@@ -154,6 +160,8 @@ PROGRAM 268 : Design a class Exchange to accept a sentence and interchange the f
 			Specify the class Exchange giving details of the constructor(), void readsentence(), void exfirstlast()
 			and void display(). Define the main() function to create an object and call the functions accordingly
 			to enable the task.
+
+
 
 PROGRAM 269 : Design a class VowelWord to accept a sentence and calculate the frequency of words that begin with a
 			vowel. The words in the input string are separated by a single blank space and terminated by a full stop.
@@ -189,12 +197,12 @@ PROGRAM 270 : A happy number is a number in which the eventual sum of the square
 			Data Members
 			n : stores the number
 			Member functions:
-			Happy( ) : constructor to assign 0 to n
-			voidgetnum(intnn) : to assign the parameter value to the number n = nn
-			intsum_sq_digits(int x) : returns the sum of the square of the digits of the
+			Happy() : constructor to assign 0 to n
+			void getnum(int nn) : to assign the parameter value to the number n = nn
+			int sum_sq_digits(int x) : returns the sum of the square of the digits of the
 			number x, using the recursive technique.
-			voidishappy() : checks if the given number is a happy by calling the
-			functionsum_sq_digits(int) and displays an appropriate
+			void ishappy() : checks if the given number is a happy by calling the
+			function sum_sq_digits(int) and displays an appropriate
 			message.
 			Specify the class Happy giving details of the constructor( ), void getnum( int), intsum_sq_digits(int) and
 			void ishappy(). Also define a main function to create an object and call the methods to check for a happy
@@ -208,14 +216,13 @@ PROGRAM 271 : A class Combine contains an array of integers which combines two a
 			com[ ] : integer array
 			size : size of the array
 			Member functions/methods
-			Combine(intnn) : parameterized constructor to assign size = nn
-			voidinputarray( ) : to accept the array elements
-			void sort() : sorts the elements of combined array in ascending
-			order using the selection sort technique.
+			Combine(int nn) : parameterized constructor to assign size = nn
+			void inputarray() : to accept the array elements
+			void sort() : sorts the elements of combined array in ascending order using the selection sort technique.
 			void mix(Combine A, Combine B) : combines the parameterized object arrays and stores
 			the result in the current object array along with the
 			duplicate elements , if any.
-			void display( ) : displays the array elements.
+			void display() : displays the array elements.
 			Specify the class Combine giving details of the constructor(int ), void inputarray( ), void sort(), void
 			mix(Combine, Combine) and void display( ). Also define the main function to create an object and call
 			the methods accordingly to enable the task.
@@ -567,9 +574,8 @@ PROGRAM 283 : Write a program to accept a sentence which may be terminated by ei
 
 			Example 3
 			INPUT : LOOK BEFORE YOU LEAP.
-			OUTPUT: NUMBER OF WORDS BEGINNING AND ENDING WITH A VOWEL = 2
-			A ARE YOU MUST AIM TO BE BETTER PERSON TOMORROW THAN YOU
-			TODAY
+			OUTPUT: NUMBER OF WORDS BEGINNING AND ENDING WITH A VOWEL = 0
+			LOOK BEFORE YOU LEAP
 
 			Example 4
 			INPUT : HOW ARE YOU@

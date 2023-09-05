@@ -1,3 +1,5 @@
+//working
+
 import java.util.Scanner;
 
 public class PROGRAM_286_SumDigits {
@@ -8,12 +10,14 @@ public class PROGRAM_286_SumDigits {
         System.out.println("Enter value of n");
         int n = sc.nextInt();
         int i, temp, copy, sum, d;
-        if (n>m)
+
+        if (m>n) //m should be less than n
         {
             temp = m;
             m = n;
             n = temp;
         }
+
         for (i = m; ;i++) {
             copy = i;
             sum = 0;
@@ -23,7 +27,7 @@ public class PROGRAM_286_SumDigits {
                 sum+=d;
                 copy/=10;
             }
-            if(sum>n)
+            if(sum>=n)
                 break;
         }
         System.out.println("smallest number > m whose sum of digits > n "+i);

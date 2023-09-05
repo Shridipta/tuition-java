@@ -1,3 +1,5 @@
+//working
+
 import java.util.Scanner;
 
 public class PROGRAM_257_SumRowColumn {
@@ -14,9 +16,12 @@ public class PROGRAM_257_SumRowColumn {
                 System.out.println("Enter the data");
                 arr[i][j] = sc.nextInt();
             }
+
         int m = arr.length, n = arr[0].length;
-        int sum = 0;
+        int sum;
+
         for (i = 0; i < m; i++) {
+            sum = 0;
             for (j = 0; j < n; j++)
                 sum += arr[i][j];
             System.out.println("Sum of row " + (i + 1) + " = " + sum);
@@ -24,7 +29,7 @@ public class PROGRAM_257_SumRowColumn {
         for (i = 0; i < n; i++) {
             sum = 0;
             for (j = 0; j < m; j++)
-                sum += arr[i][j];
+                sum += arr[j][i];
             System.out.println("Sum of column " + (i + 1) + " = " + sum);
         }
     }

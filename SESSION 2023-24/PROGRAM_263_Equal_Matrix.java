@@ -1,3 +1,5 @@
+//working
+
 import java.util.Scanner;
 
 public class PROGRAM_263_Equal_Matrix {
@@ -12,6 +14,7 @@ public class PROGRAM_263_Equal_Matrix {
     void acceptData() {
         Scanner sc = new Scanner(System.in);
         int i, j;
+        System.out.println("Matrix");
         for (i = 0; i < row; i++)
             for (j = 0; j < col; j++) {
                 System.out.println("Enter the data");
@@ -42,8 +45,8 @@ public class PROGRAM_263_Equal_Matrix {
     }
 
     public static void main(String[] args) {
-        PROGRAM_263_Equal_Matrix obj1 = new PROGRAM_263_Equal_Matrix(3, 4);
-        PROGRAM_263_Equal_Matrix obj2 = new PROGRAM_263_Equal_Matrix(3, 4);
+        PROGRAM_263_Equal_Matrix obj1 = new PROGRAM_263_Equal_Matrix(3, 3);
+        PROGRAM_263_Equal_Matrix obj2 = new PROGRAM_263_Equal_Matrix(3, 3);
         obj1.acceptData();
         obj2.acceptData();
         obj1.display();

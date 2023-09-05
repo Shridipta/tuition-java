@@ -1,3 +1,5 @@
+//working
+
 import java.util.*;
 
 public class PROGRAM_254_KaprekarConstant {
@@ -9,7 +11,7 @@ public class PROGRAM_254_KaprekarConstant {
         while (num != 6174) {
             int md = makeDescend(num), rmd = reverse(makeDescend(num));
             num = md - rmd;
-            System.out.println(md + " - " + rmd + " = " + num);
+            System.out.println(String.format("%04d", md) + " - " + String.format("%04d", rmd) + " = " + String.format("%04d", num));
         }
     }
 

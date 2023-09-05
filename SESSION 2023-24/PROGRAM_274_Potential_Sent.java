@@ -60,9 +60,9 @@ public class PROGRAM_274_Potential_Sent {
         if (validity() == true) {
             for (int i = 0; i < words.length; i++)
                 System.out.println(words[i] + " = " + potential(words[i]));
-            arrange();
-            for (int i = 0; i < words.length; i++)
-                System.out.print(words[i] + " ");
+            // arrange();
+            // for (int i = 0; i < words.length; i++)
+            //     System.out.print(words[i] + " ");
         } else
             System.out.println("INVALID INPUT");
 

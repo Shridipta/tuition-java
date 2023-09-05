@@ -1,3 +1,5 @@
+//working
+
 import java.util.Scanner;
 
 public class PROGRAM_278_Parenthesis {
@@ -8,16 +10,18 @@ public class PROGRAM_278_Parenthesis {
     }
 
     int check() {
-        int count = 0;
+        int c1 = 0, c2 = 0;
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
             if (ch == '(')
-                count++;
+                c1++;
+            if (ch == ')')
+                c2++;
         }
-        if (count > 1)
-            return -1;
-        else
+        if (c1 == 1 && c2 == 1)
             return 1;
+        else
+            return -1;
     }
 
     void show() {
@@ -26,7 +30,7 @@ public class PROGRAM_278_Parenthesis {
             int c1 = str.indexOf('(');
             int c2 = str.lastIndexOf(')');
             String f = str.substring(0, c1);
-            String l = str.substring(c2+1);
+            String l = str.substring(c2 + 1);
             System.out.println(f + l);
         } else
             System.out.println("String is not valid");

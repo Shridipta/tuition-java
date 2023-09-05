@@ -1,3 +1,5 @@
+//working
+
 import java.util.Scanner;
 
 public class PROGRAM_247_NumberSystem {
@@ -43,20 +45,20 @@ public class PROGRAM_247_NumberSystem {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // System.out.println("Enter a binary number");
-        // long n1 = sc.nextLong();
-        // binToDec(n1);
+        System.out.println("Enter a binary number");
+        long n1 = sc.nextLong();
+        binToDec(n1);
 
-        // System.out.println("Enter a decimal number");
-        // int n2 = sc.nextInt();
-        // System.out.println("Enter the base");
-        // int base = sc.nextInt();
-        // decToAny(n2, base);
+        System.out.println("Enter a decimal number");
+        int n2 = sc.nextInt();
+        System.out.println("Enter the base");
+        int base = sc.nextInt();
+        decToAny(n2, base);
         
         System.out.println("Enter number of any base");
         String n3 = sc.nextLine();
         System.out.println("Enter the base");
-        int base = sc.nextInt();
+        base = sc.nextInt();
         anyToDec(n3, base);
     }
 }

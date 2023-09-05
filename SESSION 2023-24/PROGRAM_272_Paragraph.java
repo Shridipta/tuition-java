@@ -14,34 +14,35 @@ public class PROGRAM_272_Paragraph {
         count = 0;
     }
 
-    void accept() {
+    int accept() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number of sentences");
         n = sc.nextInt();
-        if (n > 3 && n < 1) {
+        if (n > 3 || n < 1) {
             System.out.println("Invalid Input");
-            return;
+            return -1;
         }
         for (int i = 0; i < n; i++) {
-            System.out.println("Enter the" + i + "sentence");
+            System.out.println("Enter the " + (i + 1) + " sentence");
             String str = sc.nextLine().toUpperCase();
             if (validity(str) == false) {
                 System.out.println("Invalid Sentence - Paragraph");
-                return;
+                return -1;
             } else
                 p += str.substring(0, str.length() - 1);
         }
+        return 0;
     }
 
     boolean validity(String s) {
-        char ch = s.charAt(s.length());
+        char ch = s.charAt(s.length()-1);
         if (ch != '.' && ch != '?')
             return false;
         else
             return true;
     }
 
-    void extractWords() {
+    void extractDistinctWords() {
         StringTokenizer st = new StringTokenizer(p);
         int c = st.countTokens();
         count = c;
@@ -103,10 +104,12 @@ public class PROGRAM_272_Paragraph {
 
     public static void main(String[] args) {
         PROGRAM_272_Paragraph obj = new PROGRAM_272_Paragraph();
-        obj.accept();
-        obj.extractWords();
-        obj.countFreq();
-        obj.arrange();
-        obj.display();
+        int e = obj.accept();
+        if (e != -1) {
+            obj.extractDistinctWords();
+            obj.countFreq();
+            obj.arrange();
+            obj.display();
+        }
     }
 }

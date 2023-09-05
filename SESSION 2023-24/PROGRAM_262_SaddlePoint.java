@@ -1,6 +1,18 @@
+//not working
+
 import java.util.Scanner;
 
 public class PROGRAM_262_SaddlePoint {
+    static void print(int arr[][]) {
+        int i, j;
+        int r = arr.length, c = arr[0].length;
+        for (i = 0; i < r; i++) {
+            for (j = 0; j < c; j++)
+                System.out.print(arr[i][j] + "\t");
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number of rows");
@@ -15,6 +27,8 @@ public class PROGRAM_262_SaddlePoint {
                 System.out.println("Enter the data");
                 arr[i][j] = sc.nextInt();
             }
+
+        print(arr);
 
         for (i = 0; i < m; i++) {
             int k = minOfRow(arr[i]);

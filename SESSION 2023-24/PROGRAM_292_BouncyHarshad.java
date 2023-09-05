@@ -1,5 +1,5 @@
-
 //working
+
 import java.util.Scanner;
 
 public class PROGRAM_292_BouncyHarshad {

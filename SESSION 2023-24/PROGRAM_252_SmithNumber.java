@@ -1,3 +1,5 @@
+//working
+
 import java.util.*;
 
 public class PROGRAM_252_SmithNumber {

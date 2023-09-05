@@ -1,3 +1,5 @@
+//working
+
 import java.util.Scanner;
 
 public class PROGRAM_288_TwinPrimeRange {
@@ -18,7 +20,7 @@ public class PROGRAM_288_TwinPrimeRange {
         System.out.println("The Twin Prime Numbers are");
         for (int i = a; i < b - 1; i++) {
             if (isprime(i) == true && isprime(i + 2) == true)
-                System.out.println(i);
+                System.out.println("("+i+", "+(i+2)+")");
         }
     }
 }

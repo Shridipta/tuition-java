@@ -1,3 +1,5 @@
+//working
+
 import java.util.Scanner;
 
 public class PROGRAM_255_PrintMatrixFormat {
@@ -17,7 +19,7 @@ public class PROGRAM_255_PrintMatrixFormat {
         System.out.println("The data in matrix format");
         for (i = 0; i < r; i++) {
             for (j = 0; j < c; j++)
-                System.out.print(arr[i][j]);
+                System.out.print(arr[i][j] + "\t");
             System.out.println();
         }
     }
